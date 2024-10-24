@@ -1,0 +1,150 @@
+* {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-size: 100vw;
+}
+
+main {
+    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding: 4rem 1rem;
+}
+
+.container {
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.image-container {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.illustration-hero {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.text-container {
+    text-align: center;
+    padding: 0 2rem 1rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    padding: 1rem .5rem;
+}
+
+.stats1 {
+    margin-right: 1rem;
+}
+
+.red_hat {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-bottom: 1rem;
+}
+
+.heading1 {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    color: var(--Dark-blue);
+}
+
+.paragraph1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: .2rem;
+    color: var(--Desaturated-blue);
+}
+
+.paragraph {
+    color: var(--Desaturated-blue);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.link {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--Bright-blue); 
+}
+
+.link1, .link2 {
+    color: var(--Very-pale-blue);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 3.5;
+}
+
+.link1 {
+    background-color: var(--Bright-blue);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+
+.link2 {
+    color: var(--Desaturated-blue);
+    display: block;
+    border-radius: 1rem;
+}
+
+@media  (min-width: 375px) {
+    .container {
+        max-width: 359px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media  (min-width: 1024px) {
+    body {
+        background-repeat: no-repeat;
+        background-image: url(./images/pattern-background-desktop.svg);
+        
+    }
+
+    main {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .paragraph {
+        font-size: 1;
+    }
+}
